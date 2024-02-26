@@ -34,5 +34,18 @@ Matriz Matriz::dotProd(Matriz &matrizA, Matriz &matrizB){
     return resultante;
 }
 
+Matriz Matriz::sum(Matriz &matrizA, Matriz &matrizB){
+    
+    Matriz resultante(matrizA.m_linhas, matrizB.m_colunas);
+
+    for(int i = 0; i < matrizA.m_linhas; i++){
+        for(int j = 0; j < matrizA.m_colunas; j++){
+            int sum = 0;
+            sum = matrizA.m_matriz[i][j] + matrizB.m_matriz[i][j];
+            resultante.m_matriz[i][j] = sum;
+        }
+    }
+    return resultante;
+}
 
 

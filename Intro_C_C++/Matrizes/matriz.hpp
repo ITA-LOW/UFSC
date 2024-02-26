@@ -20,6 +20,7 @@ class Matriz{
         void exibir();
         void montarMatriz();
         static Matriz dotProd(Matriz &matrizA, Matriz &matrizB);
+        static Matriz sum(Matriz &matrizA, Matriz &matrizB);
 };
 
 #endif

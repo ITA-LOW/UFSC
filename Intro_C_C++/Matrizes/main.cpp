@@ -1,8 +1,8 @@
 #include "matriz.hpp"
 
 int main(){
-    Matriz minhaMatrizA(2,3);
-    Matriz minhaMatrizB(3,4);
+    Matriz minhaMatrizA(2,2);
+    Matriz minhaMatrizB(2,2);
 
     minhaMatrizA.montarMatriz();
     minhaMatrizA.exibir();
@@ -14,6 +14,11 @@ int main(){
 
     Matriz matrizC = Matriz::dotProd(minhaMatrizA, minhaMatrizB);
     matrizC.exibir();
+    cout << endl;
+
+    Matriz matrizD = Matriz::sum(minhaMatrizA, minhaMatrizB);
+    matrizD.exibir();
+
 
     //testando o modo 1 de fazer, esse teste tbm eh para subir em nova branch
 
