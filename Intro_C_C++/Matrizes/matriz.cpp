@@ -18,17 +18,20 @@ void Matriz::montarMatriz(){
     }
 }
 
-void Matriz::dotProd(Matriz &matrizA, Matriz &matrizB, Matriz matrizC){
+Matriz Matriz::dotProd(Matriz &matrizA, Matriz &matrizB){
     
+    Matriz resultante(matrizA.m_linhas, matrizB.m_colunas);
+
     for(int i = 0; i < matrizA.m_linhas; i++){
         for(int j = 0; j < matrizB.m_colunas; j++){
             int sum = 0;
             for(int k = 0; k < matrizA.m_colunas; k++){
                 sum += matrizA.m_matriz[i][k]*matrizB.m_matriz[k][j];
             }
-            matrizC.m_matriz[i][j] = sum;
+            resultante.m_matriz[i][j]=sum;
         }
     }
+    return resultante;
 }
 
 

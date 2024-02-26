@@ -19,7 +19,7 @@ class Matriz{
         
         void exibir();
         void montarMatriz();
-        void dotProd(Matriz &matrizA, Matriz &matrizB, Matriz matrizC);
+        static Matriz dotProd(Matriz &matrizA, Matriz &matrizB);
 };
 
 #endif
