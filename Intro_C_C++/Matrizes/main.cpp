@@ -12,10 +12,10 @@ int main(){
     minhaMatrizB.exibir();
     cout << endl;
 
-    /* Matriz matrizC(2,4); tambem pode ser feito de outra maneira
-    matrizC.dotProd(minhaMatrizA, minhaMatrizB); */
     Matriz matrizC = Matriz::dotProd(minhaMatrizA, minhaMatrizB);
     matrizC.exibir();
+
+    //testando o modo 1 de fazer, esse teste tbm eh para subir em nova branch
 
     return 0;
 }
