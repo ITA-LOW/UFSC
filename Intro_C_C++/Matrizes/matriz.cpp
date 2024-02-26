@@ -48,4 +48,11 @@ Matriz Matriz::sum(Matriz &matrizA, Matriz &matrizB){
     return resultante;
 }
 
+Matriz Matriz::inversa(Matriz &matrizA){
+    
+    Matriz resultante_invertida(matrizA.m_colunas, matrizA.m_linhas);
+
+    //falta implementar
+}
+
 
